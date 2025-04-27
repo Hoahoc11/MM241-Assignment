@@ -1,0 +1,181 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="dzi_0kj9ftHeh2H3s0xP">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="CPU and Resource" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="531" y="715" width="980" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Process Control" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="482" y="134" width="1044" height="508" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Memory Management" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="8" y="134" width="454" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Application Modules" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="839" y="8" width="203" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Memory Manager" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="184" y="159" width="181" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Process Scheduler" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="847" y="159" width="188" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Memory Allocation Table" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="119" y="286" width="235" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Process Control Block" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1089" y="286" width="213" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Process States" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="741" y="437" width="161" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Ready Queue" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="564" width="153" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Blocked Queue" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="901" y="564" width="167" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="CPU" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="740" width="89" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Resource Manager" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1206" y="740" width="189" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Signal Handling Module" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1561" y="159" width="225" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Requests Memory" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.68;entryX=0.5;entryY=0.01;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="274" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Requests Process Control" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Allocates Memory" style="curved=1;startArrow=none;endArrow=block;exitX=0.12;exitY=1.01;entryX=0.28;entryY=0;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Releases Memory" style="curved=1;startArrow=none;endArrow=block;exitX=0.47;exitY=1.01;entryX=0.55;entryY=0;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="263" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Updates" style="curved=1;startArrow=none;endArrow=block;exitX=0.76;exitY=0;entryX=0.74;entryY=1.01;" edge="1" parent="1" source="8" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="377" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Creates Process" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.83;entryX=0;entryY=0.29;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="603" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="Terminates Process" style="curved=1;startArrow=none;endArrow=block;exitX=0.75;exitY=1.01;entryX=0.21;entryY=0;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1053" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="Holds State" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.77;entryX=0.5;entryY=0;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="821" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" value="Ready for Execution" style="curved=1;startArrow=none;endArrow=block;exitX=0.22;exitY=1;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="716" y="527" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="Blocked State" style="curved=1;startArrow=none;endArrow=block;exitX=0.93;exitY=1;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="984" y="527" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="Scheduled for Execution" style="curved=1;startArrow=none;endArrow=block;exitX=0.07;exitY=0.99;entryX=0;entryY=0.31;" edge="1" parent="1" source="11" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="643" />
+              <mxPoint x="590" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" value="Waiting for Resource" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0;entryY=0.21;" edge="1" parent="1" source="12" target="14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="984" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" value="Executes Process" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.36;entryX=0.31;entryY=1;" edge="1" parent="1" source="13" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1118" y="715" />
+              <mxPoint x="1118" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="Returns to Ready Queue" style="curved=1;startArrow=none;endArrow=block;exitX=0.34;exitY=0;entryX=0.74;entryY=0.99;" edge="1" parent="1" source="13" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="715" />
+              <mxPoint x="787" y="643" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" value="Allocates Resources" style="curved=1;startArrow=none;endArrow=block;exitX=0.42;exitY=0;entryX=0.69;entryY=1;" edge="1" parent="1" source="14" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1273" y="715" />
+              <mxPoint x="1273" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" value="Releases Resources" style="curved=1;startArrow=none;endArrow=block;exitX=0.87;exitY=0;entryX=1;entryY=0.92;" edge="1" parent="1" source="14" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1436" y="715" />
+              <mxPoint x="1436" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" value="Sends Signals" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.66;entryX=0.5;entryY=0.01;" edge="1" parent="1" source="5" target="15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1674" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" value="Notifies" style="curved=1;startArrow=none;endArrow=block;exitX=0.13;exitY=1.01;entryX=1;entryY=0.05;" edge="1" parent="1" source="15" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1476" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
